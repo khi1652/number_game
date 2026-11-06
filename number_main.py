@@ -7,10 +7,10 @@ if best == 0:
 else:
     print('현재 최고 기록 :', best, '번')
 
-answer = random.randint(1, 100)
+answer = random.randint(1, 50)
 tries = 0
 while True:
-    guess = get_number('1~100 사이의 수 : ', 1, 100)
+    guess = get_number('1~50 사이의 수 : ', 1, 50)
     tries += 1
     if guess < answer:
         print('UP!')
